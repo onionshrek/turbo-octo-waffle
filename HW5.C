@@ -3,7 +3,6 @@
 #include <stdio.h>   // printf, scanf
 #include <stdlib.h>  // rand
 #include <unistd.h>  // getpid
-#include <time.h>    //clock
 
 #define ERROR_MINA_ENCONTRADA 1
 #define ERROR_ESPACIO_YA_DESCUBIERTO 2

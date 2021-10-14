@@ -5,20 +5,16 @@
 #include <unistd.h>  // getpid
 #include <time.h>    //clock
 
-// Cosas que no deberías modificar si no sabes lo que haces
 #define ERROR_MINA_ENCONTRADA 1
 #define ERROR_ESPACIO_YA_DESCUBIERTO 2
 #define ERROR_NINGUNO 3
-
-// Cosas que puedes modificar ;)
 #define COLUMNAS 10
 #define FILAS 10
 #define ESPACIO_SIN_DESCUBRIR '.'
 #define ESPACIO_DESCUBIERTO ' '
 #define MINA '*'
 #define CANTIDAD_MINAS \
-  5  // ¿cuántas minas colocar en el tablero de manera aleatoria? va a fallar si
-     // hay menos espacio que el número de minas
+  15  // cuántas minas colocar en el tablero de manera aleatoria
 #define DEBUG 0  // Si lo pones en 1, se van a desocultar las minas
 
 // Devuelve el número de minas que hay cercanas en determinada coordenada
@@ -58,9 +54,7 @@ int obtenerMinasCercanas(int fila, int columna, char tablero[FILAS][COLUMNAS]) {
   return conteo;
 }
 
-// Devuelve un número aleatorio entre minimo y maximo, incluyendo a minimo y
-// maximo
-// https://parzibyte.me/blog/2019/03/21/obtener-numeros-aleatorios-c/
+// Devuelve un número aleatorio entre minimo y maximo, incluyendo a minimo y máximo
 int aleatorioEnRango(int minimo, int maximo) {
   return minimo + rand() / (RAND_MAX / (maximo - minimo + 1) + 1);
 }
@@ -204,7 +198,7 @@ int noHayCasillasSinAbrir(char tablero[FILAS][COLUMNAS]) {
 }
 
 int main() {
-  printf("** BUSCAMINAS **\nPrepara tus nalgas que van a reventar\n");
+  printf("** BUSCAMINAS **\nPrepara tus nalgas que voy a retumbar\n[INSTRUCCIONES]\nPara jugar este juego tendrás que colocar las\nfilas (letras) y columnas (números) en sus respectivos lugares.\nRecuerda que hay que divertirse en nombre de Alá XD\nQue comience el juego jsjsjsjs.\n \n");
   char tablero[FILAS][COLUMNAS];
   int deberiaMostrarMinas = 0;
   // Alimentar rand

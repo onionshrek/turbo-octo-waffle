@@ -14,7 +14,7 @@
 #define ESPACIO_DESCUBIERTO ' '
 #define MINA '*'
 #define CANTIDAD_MINAS \
-  15  // cuántas minas colocar en el tablero de manera aleatoria
+  25  // cuántas minas colocar en el tablero de manera aleatoria
 #define DEBUG 0  // Si lo pones en 1, se van a desocultar las minas
 
 // Devuelve el número de minas que hay cercanas en determinada coordenada

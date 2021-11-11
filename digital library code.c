@@ -8,7 +8,7 @@ typedef struct {
     char title[50];
     char author[50];
     int full;
-}book;
+}books;
 
 typedef struct {
     char title[50];

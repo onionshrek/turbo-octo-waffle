@@ -54,8 +54,8 @@ int main() {
      p("you wanna continue?\n\n");
      p("[1] - continue. \n");
      p("[2] - exit the program. \n\n");
-     p("option: ")
-     s("%i"),&continue);
+     p("option: ");
+     s("%i"),&continue;
      p("\n");
     } while(continue == 1);
     
@@ -81,7 +81,9 @@ void alibra() {
     }
 }
 void abook() {
+    int i,j,aux;
     
+    aux = 0; 
 }
 void cbook() {
     
@@ -97,13 +99,4 @@ void empty() {
     }
  }
 
-}
-void change(char words[50]) {
-    int i,j,aux;
-    
-    aux = 0;
-    
-    for(i=0; i < 50; i++) {
-        for(j = 0; j < 50 && aux ==0;j++) {
-    }
 }

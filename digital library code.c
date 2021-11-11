@@ -55,7 +55,7 @@ int main() {
      p("[1] - continue. \n");
      p("[2] - exit the program. \n\n");
      p("option: ");
-     s("%i"),&continue;
+     s("%i",&continue);
      p("\n");
     } while(continue == 1);
     
@@ -77,13 +77,45 @@ void alibra() {
             p("introduced libraries: \n\n",i+1);
             libraries[i].full = 1;
             aux = 1;
+            }
         }
     }
-}
 void abook() {
-    int i,j,aux;
+    int i,j,aux;option;
     
     aux = 0; 
+    
+    do{
+        p("select the libary where you wanna store the book: \n\n");
+        for(i = 0; i < 50; i++) {
+            if(libraries[i].full == 1){
+                p("%i - %s. \n",i,libraries[i].title);
+            }
+            }
+            p("option: ");
+            s("%i",&option);
+            p("\n");
+    } while(option < 0 || option > 50);
+    
+    for(i = 0; i < 50; i++) {
+        for(j = 0; j < 50 && aux ==0; j++) {
+            if(libraries[option].books[j].full == 0) {
+                P("introduce the book title: ");
+                fflush(stdin);
+                fgets(libraries[option].books[j].title,50,stdin);
+                change(libraries[option].books[j].title);
+                p("\n");
+                p("now introduce the author: ");
+                fflush(stdin);
+                fgets(libraries[option].books[j].author,50,stdin);
+                change(libraries[option].books[j].author);
+                p("\n");
+                p("registed books: %i. \n\n",j+1);
+                libraries[option].books[j].full = 1;
+                aux = 1;
+         }        
+      }
+   }
 }
 void cbook() {
     
@@ -95,8 +127,29 @@ void empty() {
         for(j = 0; j < 50; j++) {
         libraries[i].full = 0;
         libraries[i].books[j]. full = 0;
-        
+     
+            }
+        }
     }
  }
 
 }
+void change(char words[50]) {
+    int i,j,aux;
+    
+    aux = 0;
+    
+    for(i=0; i < 50; i++) {
+        for(j = 0; j < 50 && aux ==0;j++) {
+            if(libraries[i].title[i] == '\n') {
+                libraries[i].title[i] = '\0';
+            }
+            if(libraries[i].books[j].author[j] == '\n') {
+                libraries[i].books[j].author[j] = '\0';
+            }
+            if(libraries[i].books[j].title[j] == '\n') {
+                libraries[i].books[j].title[j] = '\0';
+            }
+    }
+}
+

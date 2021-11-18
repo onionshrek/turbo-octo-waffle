@@ -125,6 +125,7 @@ void cbook() {
     fflush(stdin);
     fgets(check,50,stdin);
     cambiar(check);
+    p("\n");
     for(i=0; i < 50; i++) {
         for(j = 0; j < 50; j++) {
            

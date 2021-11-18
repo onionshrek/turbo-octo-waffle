@@ -78,4 +78,28 @@ Then the abook section will work on the distribution of the books in the pre-sav
             s("%i",&option);
             p("\n");
     } while(option < 0 || option > 50);
+    
+ Abook section that stores the book's name:
+ 
+        for(i = 0; i < 50; i++) {
+        for(j = 0; j < 50 && aux == 0; j++) {
+            if(libraries[option].book[j].full == 0) {
+                p("introduce the book title: ");
+                fflush(stdin);
+                fgets(libraries[option].book[j].title,50,stdin);
+                cambiar(libraries[option].book[j].title);
+                p("\n");
+                p("now introduce the author: ");
+                fflush(stdin);
+                fgets(libraries[i].book[j].author,50,stdin);
+                cambiar(libraries[i].book[j].author);
+                p("\n");
+                p("registed books: %i. \n\n",j+1);
+                libraries[i].book[j].full = 1;
+                aux = 1;
+         }        
+      }
+   }
+}
+
 # Video

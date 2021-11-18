@@ -12,6 +12,8 @@ The library starts without any books stored in the program, and it needs to rece
      [2] - add book.
      [3] - consult book. 
      option: 
+     
+# Program Structure
 
 So the program is asking the user which option will be selected to operate in the computer, bassically this section will give an option in any of the cases where in the program will be designated as: alibra (new library), abook (new book), cbook (consult book). 
 
@@ -37,8 +39,43 @@ So the program is asking the user which option will be selected to operate in th
              break;
          }
 
-This three options will show another three options where the user can choose to continue searching or adding books in the virtual library
+This three options are suppose to guide the users in an easier way to add or consult their books, in case 1 the following code will be required to act as a library creator, and its principal function is to name and create a shelving where the books are gonna be stored.
 
+    void alibra() {
+        int i,aux;
+   
+    aux = 0;
+    for(i = 0; i < 50 && aux ==0; i++) {
+        if(libraries[i].full == 0) {
+            p("insert a name to the library: ");
+            fflush(stdin);
+            fgets(libraries[i].title,50,stdin);
+            cambiar(libraries[i].title);
+            p("\n");
+            p("introduced libraries: \n\n",i+1);
+            libraries[i].full = 1;
+            aux = 1;
+            }
+        }
+    }
 
+Then the abook section will work on the distribution of the books in the pre-saved libraries, in this section the user is able to write any title that don't go over 50 characters, if it does, the system won't save the title and it will pass away and return to the menu (the first question).
 
+    void abook() {
+    int i,j,aux;
+    int option;
+    
+    aux = 0; 
+    
+    do{
+        p("select the libary where you wanna store the book: \n\n");
+        for(i = 0; i < 50; i++) {
+            if(libraries[i].full == 1){
+                p("%i - %s. \n",i,libraries[i].title);
+            }
+            }
+            p("option: ");
+            s("%i",&option);
+            p("\n");
+    } while(option < 0 || option > 50);
 # Video

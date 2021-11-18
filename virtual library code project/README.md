@@ -9,3 +9,5 @@ The library starts with 0 books, and it needs to receive a library, book or (if 
      [2] - add book.
      [3] - consult book. 
      option: 
+
+So the program is asking the user which option will be selected to operate in the computer, bassically

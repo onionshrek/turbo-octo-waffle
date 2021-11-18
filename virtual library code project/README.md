@@ -79,7 +79,7 @@ Then the abook section will work on the distribution of the books in the pre-sav
             p("\n");
     } while(option < 0 || option > 50);
     
- Abook section that stores the book's name:
+ Abook section that stores the author and book's name:
  
         for(i = 0; i < 50; i++) {
         for(j = 0; j < 50 && aux == 0; j++) {

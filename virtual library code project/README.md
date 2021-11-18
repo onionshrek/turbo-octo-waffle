@@ -79,7 +79,7 @@ Then the abook section will work on the distribution of the books in the pre-sav
     aux = 0; 
     
     do{
-        p("select the libary where you wanna store the book: \n\n");
+        p("select the library where you wanna store the book: \n\n");
         for(i = 0; i < 50; i++) {
             if(libraries[i].full == 1){
                 p("%i - %s. \n",i,libraries[i].title);
@@ -113,7 +113,7 @@ Then the abook section will work on the distribution of the books in the pre-sav
         }
     }
     
-The purpose of the third case is to allow the user to search any book that the user registered in the pass   
+The purpose of the third case is to allow the user to search any book that the user registered in the past.  
     
     void cbook() {
     int i,j,aux,compare;

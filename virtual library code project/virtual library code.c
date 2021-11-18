@@ -73,7 +73,7 @@ void alibra() {
             fgets(libraries[i].title,50,stdin);
             cambiar(libraries[i].title);
             p("\n");
-            p("introduced libraries: \n\n",i+1);
+            p("introduced libraries: %i \n\n",i+1);
             libraries[i].full = 1;
             aux = 1;
             }
@@ -86,7 +86,7 @@ void abook() {
     aux = 0; 
     
     do{
-        p("select the libary where you wanna store the book: \n\n");
+        p("select the library where you wanna store the book: \n\n");
         for(i = 0; i < 50; i++) {
             if(libraries[i].full == 1){
                 p("%i - %s. \n",i,libraries[i].title);
@@ -167,3 +167,5 @@ void cambiar(char words[50]) {
     }
 }
 }
+
+

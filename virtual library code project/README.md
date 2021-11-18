@@ -34,4 +34,4 @@ So the program is asking the user which option will be selected to operate in th
              break;
          }
 
-This three options will show another three options where the user can choose to continue searching or adding books in our virtual library
+This three options will show another three options where the user can choose to continue searching or adding books in the virtual library

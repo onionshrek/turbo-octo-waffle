@@ -101,7 +101,7 @@ void abook() {
     for(i = 0; i < 50; i++) {
         for(j = 0; j < 50 && aux ==0; j++) {
             if(libraries[option].book[j].full == 0) {
-                Printf("introduce the book title: ");
+                p("introduce the book title: ");
                 fflush(stdin);
                 fgets(libraries[option].book[j].title,50,stdin);
                 cambiar(libraries[option].book[j].title);

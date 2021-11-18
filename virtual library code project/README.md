@@ -48,7 +48,9 @@ So the program is asking the user which option will be selected to operate in th
              break;
          }
 
-This three options are suppose to guide the users in an easier way to add or consult their books, in case 1 the following code will be required to act as a library creator, and its principal function is to name and create a shelving where the books are gonna be stored.
+This three options are suppose to guide the users in an easier way to add or consult their books, in case 1 the following code will be required to act as a library creator, and its principal function is to name and create a shelving where the books are gonna be stored. 
+
+P.D. I Dunno why, but  my compiler hates the word "change" so I only use it's spanish counterpart.
 
     void alibra() {
         int i,aux;
@@ -88,7 +90,7 @@ Then the abook section will work on the distribution of the books in the pre-sav
             p("\n");
     } while(option < 0 || option > 50);
     
- Abook section that stores the author and book's name:
+ This is an abook section that stores the author and book's name:
  
         for(i = 0; i < 50; i++) {
         for(j = 0; j < 50 && aux == 0; j++) {
@@ -110,5 +112,26 @@ Then the abook section will work on the distribution of the books in the pre-sav
              }
         }
     }
-
+    
+The purpose of the third case is to allow the user to search any book that the user registered in the pass   
+    
+    void cbook() {
+    int i,j,aux,compare;
+    char check[50];
+    aux = 0;
+    p("introduce the book you wanna search: ");
+    fflush(stdin);
+    fgets(check,50,stdin);
+    cambiar(check);
+    p("\n");
+    for(i=0; i < 50; i++) {
+        for(j = 0; j < 50; j++) {
+           
+            if(compare == 0){
+                p("%s is in the %s shelving and belongs to %s. \n\n",libraries[i].book[j].title,libraries[i].book[j].author);
+                aux = 1;
+            }
+        }
+    }
+}
 # Video

@@ -11,7 +11,7 @@ The library starts without any books stored in the program, and it needs to rece
   
 The first step in the program is to insert the name of the library where the user wants to save its book, nevertheless, it will be demostrated on the following screenshot:
 
-  ![image](https://user-images.githubusercontent.com/88512704/142443421-16c190d1-d9ca-4c96-8554-47940cc9468e.png)
+  ![image](https://user-images.githubusercontent.com/88512704/142449469-15d7d3cb-40d1-4ced-93a1-9fd2edea832f.png)
   
 The next step is a little bit harder but, the program will guide the user to have an easier data registration. Starts with the book's name, then the author and the program will provide two options, 
 

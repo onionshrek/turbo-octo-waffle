@@ -134,6 +134,27 @@ The purpose of the third case is to allow the user to search any book that the u
             }
         }
     }
+    
+Change (cambiar) section:
+
+    void cambiar(char words[50]) {
+    int i,j,aux;
+    
+    aux = 0;
+    
+    for(i=0; i < 50; i++) {
+        for(j = 0; j < 50; j++) {
+            if(libraries[i].title[j] == '\n') {
+                libraries[i].title[j] = '\0';
+            }
+            if(libraries[i].book[j].author[j] == '\n') {
+                libraries[i].book[j].author[j] = '\0';
+            }
+            if(libraries[i].book[j].title[j] == '\n') {
+                libraries[i].book[j].title[j] = '\0';
+            }
+        }
+    }
 # Video
 
 # Bibliography 

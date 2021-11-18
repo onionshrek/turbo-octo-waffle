@@ -7,7 +7,7 @@ This books are going to be saved in different shelvings based on the names the u
 
 The library starts without any books stored in the program, and it needs to receive a library, book or (if you already have one), book. So the first visual panel will show this:
     
-  ![image](https://user-images.githubusercontent.com/88512704/142442177-62beff4c-0bc9-4286-abe8-daabf26a11b3.png)
+  ![image](https://user-images.githubusercontent.com/88512704/142443661-8340b734-fb97-4434-abba-b3e3a966793f.png)
   
 The first step in the program is to insert the name of the library where the user wants to save its book, nevertheless, it will be demostrated on the following screenshot:
 

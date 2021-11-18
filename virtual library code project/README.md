@@ -5,7 +5,7 @@ This books are going to be saved in different shelvings based on the names the u
 
 # Program Application
 
-The library starts without any books stored in the program, and it needs to receive a library, book or (if you already have one), book. So the first visual panel will show this:
+The library starts without any books stored in the program, and it needs to receive a library, book or (if you already have one library). So the first visual panel will show this:
     
   ![image](https://user-images.githubusercontent.com/88512704/142443661-8340b734-fb97-4434-abba-b3e3a966793f.png)
   
@@ -13,10 +13,13 @@ The first step in the program is to insert the name of the library where the use
 
   ![image](https://user-images.githubusercontent.com/88512704/142449469-15d7d3cb-40d1-4ced-93a1-9fd2edea832f.png)
   
-The next step is a little bit harder but, the program will guide the user to have an easier data registration. Starts with the book's name, then the author and the program will provide two options, 
+The next step is a little bit harder but, the program will guide the user to have an easier data registration. Starts with the book's name, then the author and the program will provide the amount of books that where registered in the program.
 
   ![image](https://user-images.githubusercontent.com/88512704/142444223-e4d711b4-4bc4-4f58-96c9-f1466feaa8db.png)
 
+For some reason this part was failing in its function, but in theory its function is to search the book in the libraries and printout: %s is in the %s shelving and belongs to %s. \n\n" notwithstanding the problem, I will work in this to be perfectly working.
+  
+  ![image](https://user-images.githubusercontent.com/88512704/142449821-42ef9f26-e3d1-41e6-8db9-16031a8f794a.png)
 
 
 # Program Structure

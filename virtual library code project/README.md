@@ -1,7 +1,7 @@
 # VIRTUAL LIBRARY
 
-My project consist of a virtual library where anyone can register any book to store it, or counting the quantity of books that where stored in the library.
-
+My project consist of a virtual library where anyone can register any book to store it, or counting the quantity of books that where stored in a virtual library.
+This books are going to be saved in different shelvings based on the names the user chooses to differentiate each shelving called "library"
 
 # Program Application
 
@@ -38,3 +38,7 @@ So the program is asking the user which option will be selected to operate in th
          }
 
 This three options will show another three options where the user can choose to continue searching or adding books in the virtual library
+
+
+
+# Video

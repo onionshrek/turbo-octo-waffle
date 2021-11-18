@@ -8,8 +8,12 @@ This books are going to be saved in different shelvings based on the names the u
 The library starts without any books stored in the program, and it needs to receive a library, book or (if you already have one), book. So the first visual panel will show this:
     
   ![image](https://user-images.githubusercontent.com/88512704/142442177-62beff4c-0bc9-4286-abe8-daabf26a11b3.png)
+  
+The first step in the program is to insert the name of the library where the user wants to save its book, nevertheless, it will be demostrated on the following screenshot:
 
-     
+  ![image](https://user-images.githubusercontent.com/88512704/142443421-16c190d1-d9ca-4c96-8554-47940cc9468e.png)
+
+
 # Program Structure
 
 So the program is asking the user which option will be selected to operate in the computer, bassically this section will give an option in any of the cases where in the program will be designated as: alibra (new library), abook (new book), cbook (consult book). 

@@ -130,8 +130,12 @@ The purpose of the third case is to allow the user to search any book that the u
             if(compare == 0){
                 p("%s is in the %s shelving and belongs to %s. \n\n",libraries[i].book[j].title,libraries[i].book[j].author);
                 aux = 1;
+                 }
             }
         }
     }
-}
 # Video
+
+# Bibliography 
+
+Kernighan, B. W., & Ritchie, D. M. (1988). The C programming language.

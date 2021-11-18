@@ -23,8 +23,17 @@ For some reason this part was failing in its function, but in theory its functio
 
 
 # Program Structure
+At the beginning I only use these libraries:
 
-So the program is asking the user which option will be selected to operate in the computer, bassically this section will give an option in any of the cases where in the program will be designated as: alibra (new library), abook (new book), cbook (consult book). 
+    #include <stdio.h>
+    #include <string.h>
+
+And define for saving time
+
+    #include <stdio.h>
+    #include <string.h>
+
+The program is asking the user which option will be selected to operate in the computer, bassically this section will give an option in any of the cases where in the program will be designated as: alibra (new library), abook (new book), cbook (consult book). 
 
     do {
          p("select an option:\n\n");

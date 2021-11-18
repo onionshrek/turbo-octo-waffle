@@ -165,7 +165,7 @@ Change (cambiar) section:
         }
     }
 # Video
-
+Click here: https://www.youtube.com/watch?v=8zbWC5UdPKQ
 # Bibliography 
 
 Kernighan, B. W., & Ritchie, D. M. (1988). The C programming language.

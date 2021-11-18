@@ -10,7 +10,7 @@ The library starts with 0 books, and it needs to receive a library, book or (if 
      [3] - consult book. 
      option: 
 
-So the program is asking the user which option will be selected to operate in the computer, bassically this section will give an option in any of the cases where in the program will be designated as alibra (new library), abook (new book), cbook (consult book)
+So the program is asking the user which option will be selected to operate in the computer, bassically this section will give an option in any of the cases where in the program will be designated as: alibra (new library), abook (new book), cbook (consult book). 
 
     do {
          p("select an option:\n\n");
@@ -33,3 +33,5 @@ So the program is asking the user which option will be selected to operate in th
              cbook(option);
              break;
          }
+
+This three options will show another three options where the user can choose to continue searching or adding books in our virtual library
